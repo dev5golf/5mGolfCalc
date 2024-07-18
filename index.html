@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수수료 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>수수료 계산기</h1>
+        <form id="golfForm">
+            <div class="form-group">
+                <label for="numPlayers">골프 인원:</label>
+                <input type="number" id="numPlayers" name="numPlayers" min="0">
+            </div>
+            <div class="form-group">
+                <label for="numRounds">라운딩 횟수:</label>
+                <input type="number" id="numRounds" name="numRounds" min="0">
+            </div>
+            <div class="form-group">
+                <label for="numNights">숙박 일수:</label>
+                <input type="number" id="numNights" name="numNights" min="0">
+            </div>
+            <div class="form-group">
+                <label for="numRooms">방 갯수:</label>
+                <input type="number" id="numRooms" name="numRooms" min="0">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="useRentalCar" name="useRentalCar">
+                <label for="useRentalCar">렌트카 사용 여부</label>
+            </div>
+            <button type="submit">제출</button>
+        </form>
+        <div id="result" class="result">
+            <!-- 수수료 계산 결과가 여기에 표시됩니다. -->
+        </div>
+        <div id="discountMessage" class="discount-message">
+            <!-- 할인이 적용되었음을 여기에 표시합니다. -->
+        </div>
+        <button id="resetButton" class="reset-button" style="display:none;">리셋</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
